@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JoJo's Bizarre Adventure - Stands & Personagens</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+    header {
+      background-color: #2d2d2d;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    /* Navegação das abas */
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      gap: 20px;
+    }
+    .tab-btn {
+      background-color: #555;
+      border: none;
+      padding: 12px 30px;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .tab-btn:hover {
+      background-color: #777;
+    }
+    .tab-btn.active {
+      background-color: #4CAF50;
+      cursor: default;
+    }
+    /* Conteúdo das abas */
+    .tab-content {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px 30px;
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #2d2d2d;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      background-color: #2d2d2d;
+      color: white;
+      font-size: 1rem;
+      border-radius: 0 0 8px 8px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JoJo's Bizarre Adventure</h1>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="stands">Stands</button>
+    <button class="tab-btn" data-tab="femininas">Personagens Femininas</button>
+    <button class="tab-btn" data-tab="masculinos">Personagens Masculinos</button>
+    <button class="tab-btn" data-tab="top5">Top 5 Masculinos</button>
+  </nav>
+
+  <!-- Aba Stands -->
+  <section id="stands" class="tab-content active">
+    <h2>Stands</h2>
+    <ul>
+      <li><strong>Star Platinum</strong> (Jotaro Kujo) – Poderosa força física e habilidade de parar o tempo.</li>
+      <li><strong>The World</strong> (Dio Brando) – Habilidade de parar o tempo, muito similar ao Star Platinum.</li>
+      <li><strong>Gold Experience</strong> (Giorno Giovanna) – Cria vida, com a evolução para <em>Gold Experience Requiem</em>.</li>
+      <li><strong>Crazy Diamond</strong> (Josuke Higashikata) – Capacidade de reparar e restaurar objetos e pessoas.</li>
+      <li><strong>Hermit Purple</strong> (Joseph Joestar) – Controle de vinhas e capacidade de prever o futuro.</li>
+      <li><strong>Sticky Fingers</strong> (Bruno Bucciarati) – Capacidade de criar zíperes em qualquer superfície.</li>
+      <li><strong>Magician's Red</strong> (Muhammad Avdol) – Controle do fogo e grandes habilidades de combate à distância.</li>
+      <li><strong>Heaven's Door</strong> (Rohan Kishibe) – Permite ler e controlar as memórias das pessoas.</li>
+    </ul>
+  </section>
+
+  <!-- Aba Personagens Femininas -->
+  <section id="femininas" class="tab-content">
+    <h2>Personagens Femininas</h2>
+    <ul>
+      <li><strong>Erina Pendleton</strong> – Interesse amoroso de Jonathan Joestar, figura central na história inicial de *Phantom Blood*.</li>
+      <li><strong>Lisa Lisa (Elizabeth Joestar)</strong> – Mãe de Joseph Joestar e mestre de Hamon em *Battle Tendency*.</li>
+      <li><strong>Suzi Q</strong> – Interesse amoroso de Joseph Joestar, amiga fiel durante a jornada.</li>
+      <li><strong>Holy Kujo</strong> – Mãe de Jotaro Kujo, personagem crucial na trama de *Stardust Crusaders*.</li>
+      <li><strong>Yukako Yamagishi</strong> – Personagem com stand obsessivo, relevante na escola de *Diamond is Unbreakable*.</li>
+      <li><strong>Trish Una</strong> – Personagem feminina central em *Golden Wind*, com stand poderoso.</li>
+      <li><strong>Jolyne Cujoh</strong> – Protagonista principal de *Stone Ocean*, filha de Jotaro Kujo.</li>
+      <li><strong>Lucy Steel</strong> – Interesse amoroso de Johnny Joestar, com papel importante em *Steel Ball Run*.</li>
+      <li><strong>Yasuho Hirose</strong> – Protagonista de *JoJolion*, amiga de Josuke Higashikata.</li>
+    </ul>
+  </section>
+
+  <!-- Aba Personagens Masculinos -->
+  <section id="masculinos" class="tab-content">
+    <h2>Personagens Masculinos</h2>
+    <ul>
+      <li><strong>Jonathan Joestar</strong> – Protagonista da Parte 1, herói clássico, descendente dos Joestars.</li>
+      <li><strong>Dio Brando</strong> – Principal vilão de *Phantom Blood* e *Stardust Crusaders*, com stand The World.</li>
+      <li><strong>Robert E. O. Speedwagon</strong> – Aliado de Jonathan Joestar, um dos grandes amigos e companheiros de luta.</li>
+      <li><strong>Will A. Zeppeli</strong> – Mestre de Jonathan, grande especialista no uso do Hamon.</li>
+      <li><strong>Joseph Joestar</strong> – Protagonista da Parte 2, neto de Jonathan, mestre do Hamon e com stand Hermit Purple.</li>
+      <li><strong>Jotaro Kujo</strong> – Protagonista de *Stardust Crusaders*, com o poderoso stand Star Platinum.</li>
+      <li><strong>Giorno Giovanna</strong> – Protagonista de *Golden Wind*, com o stand Gold Experience e Gold Experience Requiem.</li>
+      <li><strong>Yoshikage Kira</strong> – Vilão principal de *Diamond is Unbreakable*, com o stand Killer Queen.</li>
+    </ul>
+  </section>
+
+  <!-- Aba Top 5 Masculinos -->
+  <section id="top5" class="tab-content">
+    <h2>Top 5 Personagens Masculinos</h2>
+    <ul>
+      <li><strong>1. Dio Brando</strong><br>
+        Stand: <em>The World</em> (capacidade de parar o tempo)<br>
+        Importância: Dio é o vilão principal de *Phantom Blood* e o maior antagonista de *Stardust Crusaders*. Ele foi o responsável por iniciar a saga dos Joestars e sua busca por poder e imortalidade o torna um dos vilões mais poderosos e influentes da história.
+      </li>
+
+      <li><strong>2. Jotaro Kujo</strong><br>
+        Stand: <em>Star Platinum</em> (habilidade de parar o tempo)<br>
+        Importância: Jotaro é o protagonista de *Stardust Crusaders* e um dos personagens mais populares de toda a série. Seu stand, <em>Star Platinum</em>, possui imensa força e velocidade, além de ser capaz de parar o tempo, tornando Jotaro um dos personagens mais poderosos de JoJo.
+      </li>
+
+      <li><strong>3. Giorno Giovanna</strong><br>
+        Stand: <em>Gold Experience</em> (e Gold Experience Requiem)<br>
+        Importância: Giorno, o protagonista de *Golden Wind*, tem uma jornada única, sendo um Joestar por parte de pai, mas com o sangue de Dio em suas veias. Seu stand, <em>Gold Experience</em>, tem o poder de criar vida, e sua versão evoluída, <em>Gold Experience Requiem</em>, torna-o praticamente invencível.
+      </li>
+
+      <li><strong>4. Joseph Joestar</strong><br>
+        Stand: <em>Hermit Purple</em> (em *Stardust Crusaders* e *Battle Tendency*), habilidades com Hamon<br>
+        Importância: Joseph foi o protagonista de *Battle Tendency*, mas também desempenha papel crucial em *Stardust Crusaders* e outras partes da série. Sua astúcia e inteligência fazem dele um herói único, além de seu stand e habilidades com Hamon.
+      </li>
+
+      <li><strong>5. Enrico Pucci</strong><br>
+        Stand: <em>Made in Heaven</em> (e C-Moon)<br>
+        Importância: Pucci é o principal antagonista de *Stone Ocean* e um dos vilões mais profundos e filosóficos da série. Seu desejo de alcançar o "Céu" e sua manipulação do tempo com o stand <em>Made in Heaven</em> o tornam um dos personagens mais complexos e poderosos da obra.
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JoJo's Bizarre Adventure. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Script para alternar entre as abas
+    const tabs = document.querySelectorAll('.tab-btn');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const targetTab = tab.getAttribute('data-tab');
+        contents.forEach(content => {
+          if (content.id === targetTab) {
+            content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

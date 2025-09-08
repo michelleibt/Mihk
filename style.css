@@ -1,143 +1,83 @@
-/* Reset Global */
+/* Reset e base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Layout Básico da Página */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1f1f1f;
-    color: #fff;
-    padding: 0;
-    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
 
-/* Cabeçalho */
 header {
-    background-color: #272727;
-    padding: 30px;
+    background-color: #2d2d2d;
+    padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #ff6f00;
-    margin-top: 20px;
+    color: white;
 }
 
 header h1 {
-    font-size: 3rem;
-    color: #ff6f00;
-    margin: 10px 0;
+    font-size: 2.5rem;
 }
 
-/* Menu de Abas */
-nav.tabs {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+nav {
+    margin-top: 15px;
 }
 
-.tablink {
-    background-color: #272727;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
     font-size: 1.2rem;
-    transition: background-color 0.3s;
-    border-radius: 5px;
 }
 
-.tablink:hover {
-    background-color: #ff6f00;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.tablink.active {
-    background-color: #ff6f00;
-    color: #272727;
+main {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* Conteúdo das Abas */
-.tabcontent {
-    display: none;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #333;
-    border-radius: 8px;
+section {
+    margin-bottom: 50px;
 }
 
-#inicio {
-    display: block;
-}
-
-#inicio h2 {
-    font-size: 2.5rem;
-    color: #ff6f00;
-    margin-bottom: 20px;
-}
-
-#inicio p {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 10px 0;
-}
-
-#inicio h3 {
+h2 {
     font-size: 2rem;
-    color: #ff6f00;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #2d2d2d;
 }
 
-/* Gráfico de Seguidores */
-canvas {
-    max-width: 80%;
-    height: 400px;
-    margin: 30px auto;
-    border: 1px solid #444;
+h3 {
+    margin-top: 25px;
+    color: #444;
 }
 
-/* Seção Postagem de Vídeos */
-#video-posts {
-    padding: 20px;
-    background-color: #333;
-    border-radius: 8px;
-    text-align: center;
+p {
+    margin: 8px 0 15px;
+    line-height: 1.4;
 }
 
-#video-posts h2 {
-    font-size: 2.5rem;
-    color: #ff6f00;
+ul {
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
-#video-posts h3 {
-    font-size: 2rem;
-    color: #ff6f00;
-    margin-top: 30px;
+ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
 }
 
-/* Seção de Contato */
-#contato {
-    margin: 40px 20px;
-    text-align: center;
-}
-
-#contato h2 {
-    font-size: 2.5rem;
-    color: #ff6f00;
-    margin-bottom: 20px;
-}
-
-#contato p {
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-/* Rodapé */
 footer {
-    background-color: #272727;
-    padding: 15px;
+    background-color: #2d2d2d;
+    color: white;
     text-align: center;
-    margin-top: 40px;
-    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 1rem;
 }
